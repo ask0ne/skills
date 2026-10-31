@@ -1,6 +1,5 @@
 {
   "name": "ask0ne",
-  "id": "ask0ne",
   "owner": {
     "name": "ask0ne"
   },
@@ -17,7 +16,12 @@
       "author": {
         "name": "ask0ne"
       },
-      "keywords": ["skills", "subagents", "workflow", "ui-design"],
+      "keywords": [
+        "skills",
+        "subagents",
+        "workflow",
+        "ui-design"
+      ],
       "category": "workflow"
     }
   ]
