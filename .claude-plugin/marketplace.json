@@ -1,0 +1,24 @@
+{
+  "name": "ask0ne",
+  "id": "ask0ne",
+  "owner": {
+    "name": "ask0ne"
+  },
+  "metadata": {
+    "description": "My Claude Code skills and subagents",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "ask0ne-skills",
+      "source": "./",
+      "description": "Skills and subagents: boost, eli5, wip, ui-design, build-verifier, parity-auditor, path-tracer",
+      "version": "1.0.0",
+      "author": {
+        "name": "ask0ne"
+      },
+      "keywords": ["skills", "subagents", "workflow", "ui-design"],
+      "category": "workflow"
+    }
+  ]
+}
