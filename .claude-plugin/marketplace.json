@@ -11,7 +11,7 @@
     {
       "name": "ask0ne-skills",
       "source": "./",
-      "description": "Skills and subagents: boost, eli5, wip, ui-design, build-verifier, parity-auditor, path-tracer",
+      "description": "Skills and subagents: boost, wip, nox, gm, ui-design, build-verifier, parity-auditor, path-tracer",
       "version": "1.0.0",
       "author": {
         "name": "ask0ne"

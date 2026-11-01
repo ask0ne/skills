@@ -59,13 +59,22 @@ install the claude code hook "edit-lint" (needs jq): save https://raw.githubuser
 install this claude code status line (needs jq): save https://raw.githubusercontent.com/ask0ne/skills/main/statusline/statusline.sh to ~/.claude/statusline.sh and chmod +x it. then set "statusLine" in ~/.claude/settings.json to the json at https://raw.githubusercontent.com/ask0ne/skills/main/statusline/statusline.json, keeping every other key. tell me what each part of the line shows.
 ```
 
+### nox and gm: the shell part
+
+`/nox` saves a thread, `/gm` resumes it. the `gm` command in your terminal jumps into that thread's worktree and starts claude on it. the shell function is not part of the plugin, so paste this into claude code:
+
+```
+install the "gm" shell command for the claude code skills nox and gm (zsh): save https://raw.githubusercontent.com/ask0ne/skills/main/shell/gm.zsh to ~/.claude/gm.zsh, then add the line `source ~/.claude/gm.zsh` to ~/.zshrc if it is not already there. also make sure the nox and gm skills are installed (plugin ask0ne-skills@ask0ne). tell me how to try it: run /nox at the end of a session, then `gm` in a new terminal.
+```
+
 ## reference
 
 ### productivity
 
 * [`/boost`](skills/productivity/boost/SKILL.md): decides if slow work can split, fans it out safely, or says no
-* [`/eli5`](skills/productivity/eli5/SKILL.md): re-explains the last answer in small words when you say huh
 * [`/wip`](skills/productivity/wip/SKILL.md): read-only checklist of this session: what is done, with proof, and what is not
+* [`/nox`](skills/productivity/nox/SKILL.md): end of day: saves where the work stopped (worktree, branch, git state, next action) as a thread file
+* [`/gm`](skills/productivity/gm/SKILL.md): start of day: resumes a thread saved by nox, re-checks git first, gives the first next action. needs the shell function below
 
 ### engineering
 
@@ -84,6 +93,10 @@ install this claude code status line (needs jq): save https://raw.githubusercont
 * [`evidence-check`](hooks/evidence-check.sh) (stop): blocks a done claim that has no evidence line, once
 * [`correction-capture`](hooks/correction-capture.sh) (userpromptsubmit): turns your corrections and rules into saved memory so they stick
 * [`edit-lint`](hooks/edit-lint.sh) (posttooluse): nags when an edit adds a comment block longer than two lines
+
+### shell
+
+* [`gm`](shell/gm.zsh) (zsh function): lists open nox threads, cds into the right worktree and runs `claude /gm <slug>`
 
 ### status line
 

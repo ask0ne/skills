@@ -1,7 +1,7 @@
 {
   "name": "ask0ne-skills",
   "version": "1.0.0",
-  "description": "My Claude Code skills and subagents: parallelise only when the work splits, plain-english explanations, mockups before UI code, and an honest mid-session checklist.",
+  "description": "My Claude Code skills and subagents: parallelise only when the work splits, mockups before UI code, an honest mid-session checklist, and an end-of-day bookmark that resumes tomorrow in the same worktree.",
   "author": {
     "name": "ask0ne",
     "url": "https://github.com/ask0ne"
@@ -11,7 +11,8 @@
   "keywords": ["skills", "subagents", "workflow", "ui-design", "claude-code"],
   "skills": [
     "./skills/productivity/boost",
-    "./skills/productivity/eli5",
+    "./skills/productivity/nox",
+    "./skills/productivity/gm",
     "./skills/productivity/wip",
     "./skills/engineering/ui-design"
   ]
